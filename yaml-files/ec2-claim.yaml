@@ -1,0 +1,15 @@
+---
+apiVersion: compositions.io/v1alpha1
+kind: InstanceClaim
+metadata:
+  name: "myapp2"
+spec:
+  parameters:
+    region: "us-east-1"
+    ami: "ami-06aa3f7caf3a30282"
+    instanceType: "t2.small"
+    keyName: "new-keys"
+    Name: "myapp2"
+
+  compositionRef:
+    name: ec2-instance
